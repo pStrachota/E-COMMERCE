@@ -39,20 +39,9 @@ const defaultOptions: ProductFilterOptions = {
 
 export default function ProductFilter() {
   const { data, isLoading, isValidating } = useFilterProducts({
-    // When filter drawer is opened in mobile view, it refetches
-    // home results when they are stale.
-    // To prevent this, we don't want to revalidate this query in filter
-    // when data is stale.
     revalidateIfStale: false,
   });
 
-  // Since `values` are depending on the server response,
-  // we disable inputs during requests.
-  // Otherwise, if user clicks multiple options of a checkbox group,
-  // only the last clicked option becomes selected for some cases.
-  // We can handle this by using query params as a fallback during requests (like optimistic UI etc.).
-  // Even if this is not the best UX, it is a common pattern used by other e-commerce websites
-  // and enough for the purpose of this project.
   const isDisabled = isValidating;
   const values = getValuesOfSelectedOptions(data?.selectedOptions);
   const router = useRouter();
@@ -63,7 +52,7 @@ export default function ProductFilter() {
     newValue: Maybe<string | string[]>,
   ) => {
     router.push(
-      routes.home({
+      routes.search({
         query: {
           ...filterArgs,
           [filterKey]: newValue,
