@@ -44,7 +44,7 @@ export default function SelectedFilters() {
 
                       if (Array.isArray(currentValue)) {
                         router.push(
-                          routes.home({
+                          routes.search({
                             query: {
                               ...restQuery,
                               [selectedOption.filterKey]: currentValue.filter(
@@ -54,7 +54,7 @@ export default function SelectedFilters() {
                           }),
                         );
                       } else {
-                        router.push(routes.home({ query: restQuery }));
+                        router.push(routes.search({ query: restQuery }));
                       }
                     },
                   }}
@@ -69,7 +69,7 @@ export default function SelectedFilters() {
               className="text-sm"
               variant="transparent"
               onClick={() => {
-                router.push(routes.home());
+                router.push(routes.search());
               }}
             >
               Clear Filters

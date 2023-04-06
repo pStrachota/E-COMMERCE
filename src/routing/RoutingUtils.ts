@@ -55,7 +55,7 @@ function createRoute<RouteArgs extends CreateRouteArgs>(
 type RouteArgs<T extends AnyFunction> = NonNullable<Parameters<T>[0]>;
 
 export const routes = {
-  home: createRoute<{ query?: ProductFilterArgs }>(() => '/home'),
+  search: createRoute<{ query?: ProductFilterArgs }>(() => '/search'),
   product: createRoute<{ params: { productId: Id } }>(
     (params) => `/products/${params.productId}`,
   ),

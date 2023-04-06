@@ -69,7 +69,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <AddToCartButton product={product} />
             <p className="text-sm">{product.description}</p>
             <NextLink
-              href={routes.home({
+              href={routes.search({
                 query: { categories: [product.category.value] },
               })}
             >
