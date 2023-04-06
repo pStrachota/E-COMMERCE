@@ -1,6 +1,7 @@
 import NextLink from '@/routing/NextLink';
 import { APP_TITLE } from '@/common/CommonUtils';
 import Center from '@/common/Center';
+import CartInfo from '@/cart/CartInfo';
 
 export default function AppHeader() {
   return (
@@ -10,6 +11,7 @@ export default function AppHeader() {
           {APP_TITLE}
         </NextLink>
         <div className="flex-grow" />
+        <CartInfo />
       </Center>
     </header>
   );
