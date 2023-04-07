@@ -11,12 +11,16 @@ import FormItem from '@/forms/FormItem';
 import Input from '@/forms/Input';
 import FormItemLabel from '@/forms/FormItemLabel';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { ApiRequestError } from '@/error-handling/ErrorHandlingTypes';
+import { Maybe } from '@/common/CommonTypes';
+import ErrorMessage from '@/error-handling/ErrorMessage';
 
 type CheckoutFormProps = {
+  error: Maybe<ApiRequestError>;
   onSubmit: SubmitHandler<CompleteCheckoutArgs>;
 };
 
-export default function CheckoutForm({ onSubmit }: CheckoutFormProps) {
+export default function CheckoutForm({ error, onSubmit }: CheckoutFormProps) {
   const { register, formState, handleSubmit } = useForm<CompleteCheckoutArgs>({
     resolver: zodResolver(completeCheckoutArgsSchema),
     defaultValues: defaultCompleteCheckoutArgs,
@@ -24,6 +28,7 @@ export default function CheckoutForm({ onSubmit }: CheckoutFormProps) {
 
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
+      <ErrorMessage error={error} />
       <FormItem error={formState.errors.nameSurname}>
         <FormItemLabel htmlFor="nameSurname">Name Surname</FormItemLabel>
         <Input

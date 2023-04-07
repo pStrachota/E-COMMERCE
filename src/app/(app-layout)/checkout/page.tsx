@@ -12,12 +12,15 @@ import { useAppDispatch, useAppSelector } from '@/store/store';
 import { useState } from 'react';
 import SectionTitle from '@/common/SectionTitle';
 import Paper from '@/common/Paper';
+import { useCheckoutMutation } from '@/checkout/CheckoutHooks';
 
 function CheckoutPage() {
   const cartItems = useAppSelector(selectCartItems);
   const dispatch = useAppDispatch();
 
   const [isSuccess, setIsSuccess] = useState(false);
+
+  const checkoutMutation = useCheckoutMutation();
 
   return (
     <>
@@ -46,7 +49,9 @@ function CheckoutPage() {
             <SectionTitle as="h2">Credit/Debit Card Information</SectionTitle>
             <Paper>
               <CheckoutForm
-                onSubmit={() => {
+                error={checkoutMutation.error}
+                onSubmit={async (values) => {
+                  await checkoutMutation.trigger(values);
                   dispatch(clearCart());
                   setIsSuccess(true);
                 }}
