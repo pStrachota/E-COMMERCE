@@ -22,7 +22,7 @@
 <h3 align="center">E-COMMERCE-NEXT.JS-PROJECT</h3>
 
   <p align="center">
-  Typescript e-commerce app, made with next.js to better understanding front-end developlment.
+  Typescript e-commerce app, made with next.js to better understanding front-end development.
   </p>
 </div>
 
