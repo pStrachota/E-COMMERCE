@@ -35,8 +35,7 @@
     <li><a href="#about-the-project">About the project</a></li>
      <li><a href="#built-with">Built With</a></li>
     <li><a href="#features">Features</a></li>
-    <li><a href="#business-rules">Business rules</a></li>
-    <li><a href="#endpoints">Endpoints</a></li>
+    <li><a href="#comments">Comments</a></li>
     <li><a href="#license">License</a></li>
   </ol>
 </details>
@@ -45,7 +44,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-As mentioned above, the main goal of this project was to gain practical knowledge of building a web application using the next.js framework. I chose this technology due to the possibility of using SSR, more transparent routing compared to pure react and easier use of SEO improvement methods.
+As mentioned above, the main goal of this project was to gain practical knowledge of building a web application using the next.js framework. I chose this technology due to the possibility of using various pre-rendering techniques (SSG, SSR), more transparent routing compared to pure react and easier use of SEO improvement methods.
 The application is a typical example of an online store that sells items of various categories. More information below
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -90,7 +89,7 @@ The application is a typical example of an online store that sells items of vari
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Comments / explanations
+## Comments
 
 - Data download is intentionally delayed to show the loading screen
 - Card validator is used to validate credit card details - however, it has been commented out and replaced with a simpler validator to show the order confirmation modal
@@ -118,16 +117,16 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT.svg?style=for-the-badge
-[contributors-url]: https://github.com/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT.svg?style=for-the-badge
-[forks-url]: https://github.com/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT/network/members
-[stars-shield]: https://img.shields.io/github/stars/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT.svg?style=for-the-badge
-[stars-url]: https://github.com/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT/stargazers
-[issues-shield]: https://img.shields.io/github/issues/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT.svg?style=for-the-badge
-[issues-url]: https://github.com/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT/issues
-[license-shield]: https://img.shields.io/github/license/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT.svg?style=for-the-badge
-[license-url]: https://github.com/pStrachota/AUCTIONS_SPRING_BOOT_PROJECT/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/pStrachota/E-COMMERCE-NEXT.JS.svg?style=for-the-badge
+[contributors-url]: https://github.com/pStrachota/E-COMMERCE-NEXT.JS/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/pStrachota/E-COMMERCE-NEXT.JS.svg?style=for-the-badge
+[forks-url]: https://github.com/pStrachota/E-COMMERCE-NEXT.JS/network/members
+[stars-shield]: https://img.shields.io/github/stars/pStrachota/E-COMMERCE-NEXT.JS.svg?style=for-the-badge
+[stars-url]: https://github.com/pStrachota/E-COMMERCE-NEXT.JS/stargazers
+[issues-shield]: https://img.shields.io/github/issues/pStrachota/E-COMMERCE-NEXT.JS.svg?style=for-the-badge
+[issues-url]: https://github.com/pStrachota/E-COMMERCE-NEXT.JS/issues
+[license-shield]: https://img.shields.io/github/license/pStrachota/E-COMMERCE-NEXT.JS.svg?style=for-the-badge
+[license-url]: https://github.com/pStrachota/E-COMMERCE-NEXT.JS/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
