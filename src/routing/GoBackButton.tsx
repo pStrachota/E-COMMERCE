@@ -1,7 +1,7 @@
 'use client';
 
-import Button from '@/common/Button';
-import { ArrowLeftIcon } from '@/common/Icons';
+import Button from '@/components/common/Button';
+import { ArrowLeftIcon } from '@/components/common/Icons';
 import { useRouter } from 'next/navigation';
 
 export default function GoBackButton() {

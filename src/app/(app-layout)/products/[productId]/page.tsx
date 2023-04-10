@@ -1,13 +1,13 @@
-import AddToCartButton from '@/cart/AddToCartButton';
-import BaseImage, { imageProps } from '@/common/BaseImage';
-import Chip from '@/common/Chip';
-import PageTitle from '@/common/PageTitle';
-import Paper from '@/common/Paper';
-import Price from '@/common/Price';
-import { productsService } from '@/products/productsService';
+import AddToCartButton from '@/components/cart/AddToCartButton';
+import BaseImage, { imageProps } from '@/components/common/BaseImage';
+import Chip from '@/components/common/Chip';
+import PageTitle from '@/components/common/PageTitle';
+import Paper from '@/components/common/Paper';
+import Price from '@/components/common/Price';
+import { productsService } from '@/service/productsService';
 import NextLink from '@/routing/NextLink';
 import { routes } from '@/routing/RoutingUtils';
-import { getMetadata } from '@/seo/SeoUtils';
+import { getMetadata } from '@/utils/SeoUtils';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 

@@ -1,4 +1,4 @@
-import { ApiRequestError } from '@/error-handling/ErrorHandlingTypes';
+import { ApiRequestError } from '@/types/ErrorHandlingTypes';
 import { HttpClientError } from '@/http-client/HttpClientError';
 
 async function handleResponse<Data>(response: Response) {
@@ -11,15 +11,13 @@ async function handleResponse<Data>(response: Response) {
     );
   }
 
-  const data = (await response.json()) as Data;
-  return data;
+  return (await response.json()) as Data;
 }
 
 export const httpClient = {
   get: async <Data>(url: string): Promise<Data> => {
     const response = await fetch(url, {});
-    const data = await handleResponse<Data>(response);
-    return data;
+    return await handleResponse<Data>(response);
   },
   post: async <Data>(url: string, body: object): Promise<Data> => {
     const response = await fetch(url, {
@@ -29,7 +27,6 @@ export const httpClient = {
       },
       body: JSON.stringify(body),
     });
-    const data = await handleResponse<Data>(response);
-    return data;
+    return await handleResponse<Data>(response);
   },
 };
