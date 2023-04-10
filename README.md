@@ -51,8 +51,8 @@ The application is a typical example of an online store that sells items of vari
 
 ## Built With
 
-* [Typescript 5.0.3](https://www.typescriptlang.org/docs/)
 * [Next.js 13](https://nextjs.org/docs)
+* [Typescript](https://www.typescriptlang.org/docs/)
 * [Tailwind CSS](https://v2.tailwindcss.com/docs)
 * [React-hook-form](https://react-hook-form.com/api/)
 * [Zod](https://zod.dev/)
