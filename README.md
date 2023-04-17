@@ -73,8 +73,15 @@ The application is a typical example of an online store that sells items of vari
 ## Features
 ### Home page
 - Browsing products
-- Filtering products by category (replace categories)
-- Sort by price (or something else)
+- Filtering products by category:
+  - Men's Clothing
+  - Women's Clothing
+  - Jewelery
+  - Electronics
+- Sort by price:
+  - low to high
+  - high to low
+- Use price range (e.g. less than 10, 10 to 100, etc.) 
 
 ### Product page
 - Checking the detailed product information
